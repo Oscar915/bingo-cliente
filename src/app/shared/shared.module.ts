@@ -10,7 +10,8 @@ const COMPONENTS = [
   MenuComponent,
   HeaderComponent,
   FooterComponent,
-  NavComponent
+  NavComponent,
+  CardboardComponent
 ];
 
 @NgModule({

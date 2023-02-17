@@ -1,0 +1,38 @@
+.bingo-card {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .cell {
+    width: 20%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cell.selected {
+    background-color: #960c07;
+    color: #fff;
+  }
+  
+  .cell.free {
+    background-color: #fff;
+  }
+  
+  .title{
+    background-color: #055a02;
+    color: #fff;
+  }
+
+  .bingo-card{
+    text-align: center;
+  }

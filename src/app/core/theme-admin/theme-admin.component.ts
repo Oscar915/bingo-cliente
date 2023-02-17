@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PeticionesService } from '../../services/peticiones.service';
 
 @Component({
   selector: 'app-theme-admin',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThemeAdminComponent implements OnInit {
 
-  constructor() { }
+  premio: number = 0;
+  constructor(private peticion: PeticionesService) { }
 
   ngOnInit(): void {
+    this.getPremio();
+  }
+
+
+  getPremio(){
+    this.peticion.getPremio().subscribe((res: any)=>{
+      this.premio=res[0].valor/2
+    })
   }
 
 }
